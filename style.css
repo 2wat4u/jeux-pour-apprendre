@@ -150,16 +150,18 @@ footer {
 }
 
 .soutenir-section {
-    max-width: 750px;
+    max-width: 800px;
     margin: 0 auto;
     padding: 60px 20px;
     text-align: center;
 }
 
 .soutenir-section p {
+    text-align: left;
+    color: #dddddd;
     font-size: 17px;
-    color: #ddd;
-    line-height: 1.6;
+    line-height: 1.7;
+    margin-bottom: 20px;
 }
 
 .soutien-list {
@@ -167,7 +169,7 @@ footer {
     padding: 0;
     margin: 30px 0;
     text-align: left;
-    color: #ccc;
+    color: #dddddd;
     font-size: 16px;
 }
 
@@ -175,4 +177,217 @@ footer {
     content: "✔ ";
     color: #00bfff;
     margin-right: 10px;
+}
+
+/* Conteneur général */
+.guide-methode {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 30px;
+    background-color: #f6f6f6;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.08);
+    font-size: 1.1rem;
+    line-height: 1.75;
+    color: #333;
+}
+
+/* Titres principaux */
+.guide-methode h2 {
+    font-size: 2rem;
+    color: #005aa7;
+    border-bottom: 2px solid #005aa7;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+
+/* Titres secondaires */
+.guide-methode h3 {
+    font-size: 1.4rem;
+    color: #0074d9;
+    margin-top: 30px;
+}
+
+/* Paragraphes */
+.guide-methode p {
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+/* Listes */
+.guide-methode ul {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.guide-methode li {
+    margin-bottom: 10px;
+}
+
+/* Mots en gras */
+.guide-methode strong {
+    color: #000;
+}
+
+/* Sur petits écrans */
+@media screen and (max-width: 768px) {
+    .guide-methode {
+        padding: 20px;
+        font-size: 1rem;
+    }
+}
+
+.intro {
+    text-align: center;
+    padding: 30px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.link-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+.link-cards .card {
+    display: block;
+    width: 260px;
+    height: auto;
+    min-height: 160px;
+    text-align: left;
+    padding: 20px 25px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #005aa7;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.link-cards .card h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #005aa7;
+}
+
+.link-cards .card p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.link-cards .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.link-cards .card {
+    text-align: center;
+}
+
+
+.play-button {
+    text-align: center;
+    margin: 60px 0 40px;
+}
+
+.play-button a {
+    background-color: #28a745;
+    color: white;
+    padding: 18px 40px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.play-button a:hover {
+    background-color: #218838;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 30px;
+    padding: 0 20px 60px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.game-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 25px 20px;
+    border-radius: 12px;
+    color: #005aa7;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+    min-height: 180px;
+}
+
+.game-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.game-box h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #005aa7;
+}
+
+.game-box p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.game-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin: 40px auto;
+    max-width: 900px;
+    /* 3 cartes de 260px + marges */
+    padding: 0 20px;
+}
+
+.game-cards .card {
+    display: block;
+    height: auto;
+    min-height: 160px;
+    padding: 20px 25px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #005aa7;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-align: center;
+}
+
+.game-cards .card h3 {
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    color: #005aa7;
+}
+
+.game-cards .card p {
+    margin: 0;
+    font-size: 0.95rem;
+    color: #444;
+}
+
+.game-cards .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
