@@ -94,27 +94,6 @@ footer {
     margin-top: 60px;
 }
 
-.hero {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.hero p {
-    text-align: left;
-    color: #dddddd;
-    font-size: 17px;
-    line-height: 1.7;
-    margin-bottom: 20px;
-}
-
-
-.hero h1 {
-    font-size: 32px;
-    margin-bottom: 20px;
-}
-
 
 .cta-buttons {
     display: flex;
@@ -237,56 +216,16 @@ footer {
     }
 }
 
-.intro {
+.intro,
+.contact,
+.math-game {
     text-align: center;
     padding: 30px 20px;
     max-width: 800px;
     margin: auto;
 }
 
-.link-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin: 40px 0;
-}
 
-.link-cards .card {
-    display: block;
-    width: 260px;
-    height: auto;
-    min-height: 160px;
-    text-align: left;
-    padding: 20px 25px;
-    border-radius: 12px;
-    background-color: #ffffff;
-    color: #005aa7;
-    text-decoration: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.link-cards .card h3 {
-    margin: 0 0 10px;
-    font-size: 1.2rem;
-    color: #005aa7;
-}
-
-.link-cards .card p {
-    margin: 0;
-    font-size: 0.95rem;
-    color: #444;
-}
-
-.link-cards .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-}
-
-.link-cards .card {
-    text-align: center;
-}
 
 
 .play-button {
@@ -309,51 +248,13 @@ footer {
     background-color: #218838;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 30px;
-    padding: 0 20px 60px;
-    max-width: 1000px;
-    margin: auto;
-}
 
-.game-box {
-    display: flex;
-    flex-direction: column;
+
+.game-cards,
+.link-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 260px);
     justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #ffffff;
-    padding: 25px 20px;
-    border-radius: 12px;
-    color: #005aa7;
-    text-decoration: none;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
-    transition: transform 0.2s, box-shadow 0.2s;
-    min-height: 180px;
-}
-
-.game-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-}
-
-.game-box h3 {
-    margin: 0 0 10px;
-    font-size: 1.2rem;
-    color: #005aa7;
-}
-
-.game-box p {
-    margin: 0;
-    font-size: 0.95rem;
-    color: #444;
-}
-
-.game-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 30px;
     margin: 40px auto;
     max-width: 900px;
@@ -361,7 +262,8 @@ footer {
     padding: 0 20px;
 }
 
-.game-cards .card {
+.game-cards .card,
+.link-cards .card {
     display: block;
     height: auto;
     min-height: 160px;
@@ -375,19 +277,35 @@ footer {
     text-align: center;
 }
 
-.game-cards .card h3 {
+.game-cards .card h3,
+.link-cards .card h3 {
     margin: 0 0 10px;
     font-size: 1.2rem;
     color: #005aa7;
 }
 
-.game-cards .card p {
+.game-cards .card p,
+.link-cards .card p {
     margin: 0;
     font-size: 0.95rem;
     color: #444;
 }
 
-.game-cards .card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+.game-cards .card:hover,
+.link-cards .card:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 0 10px rgba(0, 122, 255, 0.1);
+}
+
+.card p {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 0.3s ease, max-height 0.3s ease;
+}
+
+.card:hover p {
+    opacity: 1;
+    max-height: 100px;
+    /* Ajuste selon le contenu */
 }
