@@ -252,6 +252,7 @@ footer {
     gap: 30px;
     margin: 40px auto;
     max-width: 900px;
+
     /* 3 cartes de 260px + marges */
     padding: 0 20px;
 }
@@ -260,16 +261,18 @@ footer {
 .link-cards .card {
     display: block;
     height: auto;
-    min-height: 160px;
-    padding: 20px 25px;
-    border-radius: 12px;
-    background-color: #ffffff;
+    min-height: 320px;
+    padding: 0;
+    border-radius: 0px;
+    background-color: #f8f8f8;
     color: #005aa7;
     text-decoration: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s, box-shadow 0.2s;
-    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+    overflow: hidden;
+    text-align: left;
 }
+
 
 .game-cards .card h3,
 .link-cards .card h3 {
@@ -287,19 +290,109 @@ footer {
 
 .game-cards .card:hover,
 .link-cards .card:hover {
-    transform: translateY(-4px) scale(1.02);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 0 10px rgba(0, 122, 255, 0.1);
+    transform: translateY(-4px);
 }
 
+
 .card p {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 0.3s ease, max-height 0.3s ease;
+    margin: 0 20px 20px;
+    font-size: 0.95rem;
+    color: #444;
+    opacity: 1;
+    max-height: none;
+    overflow: visible;
+    transition: none;
+}
+
+.card h3 {
+    margin: 15px 20px 8px;
+    font-size: 1.2rem;
+    color: #005aa7;
 }
 
 .card:hover p {
     opacity: 1;
     max-height: 100px;
     /* Ajuste selon le contenu */
+}
+
+.card img {
+    width: 100%;
+    height: 50%;
+    /* hauteur fixe pour toutes les images */
+    object-fit: cover;
+    display: block;
+
+}
+
+.card-content {
+    padding: 15px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    color: #f1f1f1;
+}
+
+/* Titre du jeu */
+.card-content h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #00bfff;
+}
+
+/* Date de création */
+.card-content .date {
+    font-size: 0.75rem;
+    color: #aaa;
+    margin-top: -4px;
+}
+
+/* Description */
+.card-content p {
+    margin: 5px 0 10px;
+    font-size: 0.95rem;
+    color: #ddd;
+}
+
+/* Auteur en bas de la carte */
+.card-meta {
+    margin-top: auto;
+    font-size: 0.8rem;
+    color: #aaa;
+    text-align: right;
+}
+
+.card-meta .author {
+    font-style: italic;
+}
+
+.burger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #f1f1f1;
+}
+
+/* Version mobile */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: #2c2c2c;
+        width: 200px;
+        padding: 10px;
+        z-index: 1001;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+    }
 }
