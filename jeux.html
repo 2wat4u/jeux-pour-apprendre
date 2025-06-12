@@ -12,7 +12,12 @@
     <header>
         <nav class="navbar">
             <div class="logo">🎮 Mes Jeux</div>
-            <ul class="nav-links">
+
+            <div class="burger" id="burger">
+                ☰
+            </div>
+
+            <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="jeux.html">Jeux</a></li>
                 <li><a href="soutenir.html">Me soutenir</a></li>
@@ -23,40 +28,86 @@
 
 
     <main>
-        <h1 id="jeux" style="text-align: center; margin-top: 60px;">LISTE DE JEUX</h1>
+        <h1 id="jeux">LISTE DE JEUX</h1>
 
         <section class="game-cards">
-            <a href="https://2wat4u.github.io/homophones/" class="card">
-                <h3>Homophones</h3>
-                <p>Jeu pour distinguer les mots comme leur, leurs, ce/ses, son/sont...</p>
-            </a>
 
-            <a href="math-game.html" class="card">
-                <h3>Calcul Mental</h3>
-                <p>Test rapide pour améliorer vitesse et précision des opérations.</p>
-            </a>
-
-            <a href="https://2wat4u.github.io/wordle_eng" class="card">
-                <h3>Wordle Anglais</h3>
-                <p>Devine des mots en anglais avec un nombre limité d’essais.</p>
-            </a>
-
-            <a href="https://2wat4u.github.io/wordle" class="card">
-                <h3>Wordle</h3>
-                <p>Version française du jeu Wordle, avec des mots de 5 lettres.</p>
+            <a href="https://2wat4u.github.io/enigramme" class="card">
+                <img src="images/enig.jpg" alt="Jeu Enigramme FR">
+                <div class="card-content">
+                    <h3>Enigramme</h3>
+                    <span class="date">Dernière mise a jour - 2025-06-11</span>
+                    <p>Recompose des mots français à partir d’anagrammes et de définitions</p>
+                    <div class="card-meta">
+                        <span class="author">par 2wat4u</span>
+                    </div>
+                </div>
             </a>
 
             <a href="https://2wat4u.github.io/enigramme_eng" class="card">
-                <h3>Enigramme Anglais</h3>
-                <p>Remets en ordre les lettres pour former le bon mot anglais.</p>
+                <img src="images/enig_eng.jpg" alt="Jeu Enigramme EN">
+                <div class="card-content">
+                    <h3>Enigramme Anglais</h3>
+                    <span class="date">Dernière mise a jour - 2025-06-11</span>
+                    <p>Recompose des mots anglais à partir d’anagrammes et de définitions</p>
+                    <div class="card-meta">
+                        <span class="author">par 2wat4u</span>
+                    </div>
+                </div>
             </a>
 
-            <a href="https://2wat4u.github.io/enigramme" class="card">
-                <h3>Enigramme</h3>
-                <p>Recompose des mots français à partir d’anagrammes.</p>
+            <a href="https://2wat4u.github.io/homophones/" class="card">
+                <img src="images/homo.jpg" alt="Jeu Homophones">
+                <div class="card-content">
+                    <h3>Homophones</h3>
+                    <span class="date">Dernière mise a jour - 2025-06-11</span>
+                    <p>Apprendre les homophones avec des cantaines d'exemple différents</p>
+                    <div class="card-meta">
+                        <span class="author">par 2wat4u</span>
+                    </div>
+                </div>
             </a>
+
+            <a href="math-game.html" class="card">
+                <img src="images/math.jpg" alt="Calcul Mental">
+                <div class="card-content">
+                    <h3>Calcul Mental</h3>
+                    <span class="date">Dernière mise a jour - 2025-06-11</span>
+                    <p>Mode relaxe, chrono ou mode survie, devient le boss des math</p>
+                    <div class="card-meta">
+                        <span class="author">par 2wat4u</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://2wat4u.github.io/wordle" class="card">
+                <img src="images/wordle.png" alt="Wordle FR">
+                <div class="card-content">
+                    <h3>Wordle</h3>
+                    <span class="date">Dernière mise a jour - 2025-06-11</span>
+                    <p>Mots de 5 lettres en 6 essais avec les mots du MEES primaire</p>
+                    <div class="card-meta">
+                        <span class="author">par 2wat4u</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://2wat4u.github.io/wordle_eng" class="card">
+                <img src="images/wordle_eng.png" alt="Wordle EN">
+                <div class="card-content">
+                    <h3>Wordle Anglais</h3>
+                    <span class="date">Dernière mise a jour - 2025-06-11</span>
+                    <p>Un mot a découvrir en 6 essais version anglais</p>
+                    <div class="card-meta">
+                        <span class="author">par 2wat4u</span>
+                    </div>
+                </div>
+            </a>
+
         </section>
     </main>
+
+
 
 
 
@@ -66,6 +117,7 @@
     </footer>
 
     <script src="script.js"></script>
+
 </body>
 
 </html>
